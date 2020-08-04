@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to chatroom</title>
+	<link rel="stylesheet" type="text/css" href="stylee.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="bgimg">  
+				<img src="img/bg.jpg" alt=" ">
+	</div>
+	<div id="LoginDiv">
+		<form id="form1" method="post" action="UserLogin.php">
+			<img src="img/1.png" class="img">
+			<table>
+				<input type="Email" name="UserEmailLogin" placeholder="Email" required>
+				<input type="password" name="UserPasswordLogin" placeholder="Password" required>
+				<input type="submit" value="Login"><br><br>
+				<a href="signup.php">Create a account</a><br><br>
+				<?php
+					if(isset($_GET['error'])){
+
+				?>
+				<span style="color: red; text-align: center; text-decoration: none;">Check Your Email or Password</span>
+				<?php
+					}
+				?>
+				<ul>
+			<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		</ul>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
